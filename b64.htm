@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="A L I C E.css">
+<div class="text">
+  <div>
+    <h1>b64</h1>
+    <form id="b64Form">
+      <p>
+        <!-- Textarea for input text -->
+        <textarea id="inputText" placeholder="Enter text to encrypt or decrypt"></textarea>
+        <br>
+        <br>
+
+        <!-- Button for encrypting (encoding) -->
+        <button type="button" class="submit" onclick="encodeText()">Encrypt</button>
+
+        <!-- Button for decrypting (decoding) -->
+        <button type="button" class="submit" onclick="decodeText()">Decrypt</button>
+      </p>
+    </form>
+
+    <p><strong>Output:</strong></p>
+    <textarea id="outputText" placeholder="Result will be shown here" readonly></textarea>
+  </div>
+  <br />
+  <footer>
+    <p>made with love by</p><p style="font-weight: bold;">PIDAR</p>
+  </footer>  
+</div>
+
+<!-- Link to the external JavaScript file -->
+<script src="b64.js"></script>
