@@ -3,16 +3,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     .unselectable {
-      -webkit-user-select: none;  /* For Safari */
-      -moz-user-select: none;     /* For Firefox */
-      -ms-user-select: none;      /* For Internet Explorer/Edge */
-      user-select: none;          /* Standard syntax */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
   </style>
 <div class="text">
   <div>
     <h1>b64</h1>
-    <form id="b64Form">
+    <form class="unselectable" id="b64Form">
       <p>
         <!-- Textarea for input text -->
         <textarea id="inputText" placeholder="Enter text to encrypt or decrypt"></textarea>
@@ -20,10 +20,10 @@
         <br>
 
         <!-- Button for encrypting (encoding) -->
-        <button type="button" class="submit" onclick="encodeText()">Encrypt</button>
+        <button class="unselectable" type="button" class="submit" onclick="encodeText()">Encrypt</button>
 
         <!-- Button for decrypting (decoding) -->
-        <button type="button" class="submit" onclick="decodeText()">Decrypt</button>
+        <button class="unselectable" type="button" class="submit" onclick="decodeText()">Decrypt</button>
       </p>
     </form>
 
@@ -33,7 +33,7 @@
   <br />
   <footer>
     <br>
-    <p>made with love by</p><p style="font-weight: bold;">PIDAR</p>
+    <p class="unselectable"> made with love by</p><p style="font-weight: bold;">PIDAR</p>
   </footer>  
 </div>
 
