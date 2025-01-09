@@ -30,8 +30,10 @@ body {
     transform: translate(-50%, -50%);
     max-width: 90%; /* Make sure the content doesn't overflow */
     width: 100%; /* Ensure the div takes full width available */
+    padding: 20px; /* Add some padding to prevent content from touching edges */
 }
 
+/* Adjust title size */
 h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -65,14 +67,16 @@ button {
 
 /* Style the footer */
 footer {
-    position: absolute;
-    bottom: 20px;
     width: 100%;
     text-align: center;
     font-size: 1rem;
     color: aliceblue;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
 }
 
+/* Footer text */
 footer p {
     margin: 0;
     padding: 0;
@@ -82,6 +86,10 @@ footer p {
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
+    }
+
+    .text {
+        top: 25%; /* Move the content down on tablets for better visibility */
     }
 
     textarea {
@@ -98,7 +106,8 @@ footer p {
 
 @media (max-width: 480px) {
     .text {
-        top: 20%; /* Move the content up slightly for smaller screens */
+        top: 15%; /* Adjust top positioning to bring content into view */
+        padding: 10px; /* Less padding on mobile */
     }
 
     h1 {
@@ -118,5 +127,6 @@ footer p {
 
     footer {
         font-size: 0.8rem;
+        padding: 20px 0; /* Add more padding to footer for mobile */
     }
 }
