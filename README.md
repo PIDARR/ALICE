@@ -1,4 +1,4 @@
-# This site is a 'backup', hosted at Pidar.dev
+# This site is a 'backup', hosted at https://pidarr.github.io/ALICE/
 # This site is OUTDATED.
 
 majesty.lol is my current site that I use as portfolio or profile.
