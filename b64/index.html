@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../jsp.css">
+<div class="text">
+  <div>
+    <h1>b64</h1>
+    <form id="b64Form">
+      <p>
+
+        <textarea id="inputText" placeholder="Enter text to encrypt or decrypt"></textarea>
+        <br>
+        <br>
+
+
+        <button type="button" onclick="encodeText()">Encrypt</button>
+
+
+        <button type="button" onclick="decodeText()">Decrypt</button>
+      </p>
+    </form>
+
+    <p><strong>Output:</strong></p>
+    <textarea id="outputText" placeholder="Result will be shown here" readonly></textarea>
+  </div>
+  <br />
+  
+
+  <button onclick="window.location.href='../jsp.htm'" class="back-button">acceuil</button>
+  <br />
+  <footer>  <br />
+    <p>made with love by</p><p style="font-weight: bold;">me?
+    </p>
+  </footer>  
+</div>
+
+
+<script src="b64.js"></script>

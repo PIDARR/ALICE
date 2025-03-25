@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../jsp.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<html>
+  <div class="text">
+    <div>
+      <h1>SHA-256</h1>
+      <form id="sha256Form">
+        <p>
+          <textarea id="inputText" placeholder="Enter text to encrypt"></textarea>
+          <br>
+          <br>
+          
+          <button type="button" onclick="encryptSHA256()">Encrypt</button>
+        
+        </p>
+      </form>
+
+      <p><strong>Output:</strong></p>
+      <textarea id="outputText" placeholder="Result will be shown here" readonly></textarea>
+    </div>
+    
+    <br />
+    
+
+    <button onclick="window.location.href='../jsp.htm'" class="back-button">acceuil</button>
+    <br />
+    
+    <footer>
+      <br />
+      <p>made with love by</p>
+      <p style="font-weight: bold;">me?</p>
+    </footer>
+  </div>
+
+  <script src="sha256.js"></script>
+</html>

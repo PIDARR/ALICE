@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../jsp.css">
+<div class="text">
+  <div>
+    <h1>Caesar Cipher</h1>
+    <form id="caesarForm">
+      <p>
+
+        <textarea id="inputText" placeholder="Enter text to encrypt or decrypt"></textarea>
+        <br>
+        <br>
+
+        <button type="button" onclick="encryptCaesar()">Encrypt</button>
+
+
+        <button type="button" onclick="decryptCaesar()">Decrypt</button>
+      </p>
+    </form>
+
+    <p><strong>Output:</strong></p>
+    <textarea id="outputText" placeholder="Result will be shown here" readonly></textarea>
+  </div>
+  <br />
+  
+
+  <button onclick="window.location.href='../jsp.htm'" class="back-button">acceuil</button>
+  <br />
+  <footer>  <br />
+    <p>made with love by</p><p style="font-weight: bold;">me?</p>
+  </footer>  
+</div>
+
+
+<script src="caesar.js"></script>
+</html>
